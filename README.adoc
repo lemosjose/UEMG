@@ -1,0 +1,14 @@
+= UEMG - Repositório-arquivo para atividades
+
+
+== Como procurar arquivos no repositório 
+
+Cada branch representa uma matéria concluída ou em andamento, contendo os arquivos e as opções usadas no teste local, além do sistema de exemplo para conferir possíveis diferenças causadas por sistema-operacional.
+
+Todos os arquivos são compilados usando GCC. atualmente na versão 13.
+
+Comando usado na branch atual: `gcc src/$arquivo.c`
+
+Sistema usado:
+`6.2.13-arch1-1 x86_64 GNU/Linux`
+

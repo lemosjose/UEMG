@@ -1,10 +1,8 @@
-//código atualmente quebrado, implementação será refeita
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <locale.h>
 
-typedef struct linkedList{
+typedef struct linkedlist{
 	int posProximoElemento;
 	int posElemento;
 	int elemento;
@@ -62,7 +60,11 @@ void removeLista(int posElemento){
 		else if (anterior == NULL){
 			raiz = atual->proxElemento;
 			free(atual);
-			printf("Posição do elemento removida com sucesso");
+			printf("Posição do elemento removida com sucesso \n");
+		}else{
+			anterior->proxElemento = atual->proxElemento;
+			free(atual);
+			printf("Posição do elemento removida com sucesso \n");
 		}
 
 	}
@@ -71,8 +73,8 @@ void removeLista(int posElemento){
 void imprimelista(){
 	LinkedList* atual = raiz;
 	while(atual != NULL){
-		printf("Posição atual: %d", atual->posElemento);
-		printf("Elemento: %d", atual->elemento);
+		printf("Posição atual: %d ", atual->posElemento);
+		printf("Elemento: %d ", atual->elemento);
 		printf("Posição do próximo elemento %d \n", atual->posProximoElemento);
 		atual = atual->proxElemento;
 	}
@@ -101,6 +103,7 @@ int main(){
 			case 2:
 				printf("Digite a posição a ser removida da lista raiz \n");
 				scanf("%d", &posElemento);
+				removeLista(posElemento);				    
 				break;
 			case 3:
 				imprimelista();

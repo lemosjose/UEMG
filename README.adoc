@@ -10,5 +10,9 @@ Todos os arquivos são compilados usando GCC. atualmente na versão 13.
 Comando usado na branch atual: `gcc src/$arquivo.c`
 
 Sistema usado:
-`6.2.13-arch1-1 x86_64 GNU/Linux`
+`6.3.2-arch1-1 x86_64 GNU/Linux`
 
+
+== Observações:
+ 
+* Removendo comandos de windows, como "pause" ou "cls" invocados pela chamada system()

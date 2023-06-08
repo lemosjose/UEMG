@@ -1,0 +1,6 @@
+== Entrega de atividade 
+
+É possível compilar o texto localmente, embora este esteja disponível em formato pdf diretamente no repositório para comodidade de leitura e revisão, invoque o `asciidoctor-pdf` para gerar o arquivo pdf com: 
+
+
+`asciidoctor-pdf src/adoc/main.adoc -o nome_output.pdf`

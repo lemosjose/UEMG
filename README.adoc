@@ -1,0 +1,3 @@
+= CalcNumerico 
+
+Repositório com o código fontes dos trabalhos de Cálculo Numérico
